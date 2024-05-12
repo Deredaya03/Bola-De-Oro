@@ -18,9 +18,10 @@ export const showDefaultLang = false;
 export const ui = {
 	es: {
 		'nav.inicio': 'Inicio',
-		'nav.vota': 'Vota',
-		'nav.info': 'Información',
-		'nav.archivo': 'Archivo',
+		'nav.Cafeterías': 'Cafeterías',
+		'nav.Nosotros': 'Nosotros',
+		'nav.Tienda': 'Tienda',
+		'nav.Menu': 'Menu',
 		'nav.legal': 'Aviso Legal',
 		'nav.privacidad': 'Privacidad',
 		'nav.cookies': 'Cookies',
@@ -29,7 +30,7 @@ export const ui = {
 
 export const routes = {
 	es: {
-		vota: 'vota',
+		Cafeterías: 'Cafeterías',
 		info: 'info',
 		archivo: 'archivo',
 		'aviso-legal': 'aviso-legal',
