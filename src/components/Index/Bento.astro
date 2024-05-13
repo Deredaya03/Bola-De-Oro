@@ -1,0 +1,54 @@
+---
+import BentoItem from "@/components/Index/Bento/BentoItems.astro";
+---
+
+<section
+    class={`
+        w-full max-w-[1400px]
+        grid grid-cols-3 auto-rows-[15rem] gap-4
+        mx-auto p-20
+    `}
+>
+    <BentoItem
+        class="col-span-1 -mt-44"
+        title="Nuestra experiencia cerca de ti"
+        page="cafeterias"
+    >
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+            h-full group-hover:scale-110 transition-scale duration-1000
+            ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat -z-10"
+            style="background-image: url('/bento/Bento1.jpg')"
+        >
+        </div>
+    </BentoItem>
+    <BentoItem
+        class="col-span-1 -mt-44"
+        title="Somos maestros artesanos del café"
+        page="nosotros"
+    >
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+              h-full group-hover:scale-110 transition-scale duration-1000
+              ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat -z-10"
+            style="background-image: url('/bento/Bento2.jpg')"
+        >
+        </div>
+    </BentoItem>
+    <BentoItem
+        class="col-span-1 -mt-44"
+        title="Bola de oro en tu domicilio"
+        page="tienda"
+    >
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0 w-full
+            h-full group-hover:scale-110 transition-scale duration-1000
+            ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat -z-10"
+            style="background-image: url('/bento/Bento3.jpg');"
+        >
+        </div>
+    </BentoItem>
+</section>

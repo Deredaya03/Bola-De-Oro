@@ -1,0 +1,30 @@
+---
+import IntroItem from "@/components/Index/Intro/IntroItems.astro"
+---
+
+<section class="grid grid-cols-2 auto-rows-[30rem] gap-4 p-20">
+    <div class="col-span-2 md:col-span-1">
+        <img class="w-96 mx-auto" src="/intro/BDOintro.png" alt="Logo Intro BDO">
+        <IntroItem
+            class="grid grid-cols-4 gap-4"
+            title="SOMOS PRODUCTORES"
+            subtitle="Cultivamos, cosechamos, seleccionamos y beneficiamos los mejores granos de café para que cada taza conquiste tu paladar."
+            img="/intro/icon/icono-1.png"
+        />
+        <IntroItem
+            class="grid grid-cols-4 gap-4"
+            title="SOMOS APASIONADOS"
+            subtitle="Cuidamos con esmero cada paso del proceso de beneficiado, empaquetado y extracción enfocados en siempre brindar la taza de café perfecta."
+            img="/intro/icon/icono-2.png"
+        />
+        <IntroItem
+            class="grid grid-cols-4 gap-4"
+            title="SOMOS EXPERIENCIAS"
+            subtitle="Buscamos estar a tu alcance, ya sea a través de atención personalizada en nuestras cafeterías o en nuestra tienda en línea."
+            img="/intro/icon/icono-3.png"
+        />
+    </div>
+    <div class="relative col-span-2 md:col-span-1 w-[400px] h-auto self-center mx-auto">
+        <img src="/intro/Intro.jpg" alt="Imagen de intro" />
+    </div>
+</section>
