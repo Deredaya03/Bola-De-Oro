@@ -1,5 +1,4 @@
 ---
-import Logo from "@/components/Logo.astro";
 import Button from "@/components/buttom";
 import LanguageSelector from "@/components/Header/LenguageSelector.astro";
 import HeaderLink from "@/components/Header/HeaderLink.astro";
@@ -38,7 +37,7 @@ const translatePath = useTranslatedPath(lang);
     </HeaderLink>
     <nav
       id="header-menu"
-      class="fixed w-full h-dvh inset-0 bg-[#151a36]/90 md:text-xl lg:text-xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:flex-row md:translate-y-[initial]"
+      class="fixed w-full h-dvh inset-0 bg-[#706957]/90 md:text-xl lg:text-xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:flex-row md:translate-y-[initial]"
     >
       <HeaderLink
         class="text_glowing text-white"
@@ -66,10 +65,11 @@ const translatePath = useTranslatedPath(lang);
       </HeaderLink>
       <LanguageSelector />
       <Button
-        className="md:py-2 md:ml-auto md:text-base lg:text-base"
+        className="md:py-2 md:ml-auto md:text-base lg:text-base hover:text-[#0b7200]"
         url="https://web.whatsapp.com/send?phone=522293315478&text="
       >
         <svg
+          class=""
           style="pointer-events:none; display:block; height:20px; width:20px;"
           height="20px"
           version="1.1"
