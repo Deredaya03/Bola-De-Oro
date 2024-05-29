@@ -1,0 +1,14 @@
+---
+interface Props {
+    className?: string
+    url: string
+}
+
+const {url,className} = Astro.props;
+---
+
+<article>
+    <a href={url}>
+        <slot name="image" />
+    </a>
+</article>

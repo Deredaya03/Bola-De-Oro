@@ -1,0 +1,29 @@
+---
+import IndexLayout from '@/layouts/Layout.astro';
+import Fondo from '@/components/Index/Fondo.astro';
+import Bento from '@/components/Index/Bento.astro';
+import Intro from '@/components/Index/Intro.astro';
+import Numeros from '@/components/Index/Numeros.astro';
+import PreFooter from '@/components/Index/PreFooter.astro';
+
+import { getI18N } from "@/i18n/index"
+import { getLangFromUrl, useTranslations, useTranslatedPath, } from '@/i18n/utils';
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<IndexLayout 
+	title={i18n.SEO_TITLE_1}
+	description={i18n.SEO_DESCRIPTION}
+>
+	<Fondo />
+	<main>
+		<Bento />
+		<Intro />
+		<Numeros />
+		<PreFooter />
+	</main>
+</IndexLayout>
+
+<style></style>

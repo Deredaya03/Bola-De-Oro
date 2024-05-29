@@ -1,3 +1,8 @@
+---
+import Button from "./buttom"
+import Icons from "./icons.astro"
+---
+
 <footer class="bg-black/40">
     <div class="mx-auto w-full max-w-screen-xl p-4 px-6 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
@@ -10,9 +15,9 @@
                     />
                 </a>
                 <div class="mt-6 flex justify-center gap-x-4">
-                    <a
-                        href="https://www.facebook.com/Bola-De-Oro-191546264236688"
-                        class="text-gray-400 hover:text-white duration-300"
+                    <Button
+                        url="https://www.facebook.com/Bola-De-Oro-191546264236688"
+                        className="text-gray-400 hover:text-white duration-300"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -26,10 +31,10 @@
                             ></path>
                         </svg>
                         <span class="sr-only">Facebook</span>
-                    </a>
-                    <a
-                        href="https://www.instagram.com/cafeboladeoro/"
-                        class="text-gray-400 hover:text-white duration-300"
+                    </Button>
+                    <Button
+                        url="https://www.instagram.com/cafeboladeoro/"
+                        className="text-gray-400 hover:text-white duration-300"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +47,7 @@
                             ></path></svg
                         >
                         <span class="sr-only">Instagram</span>
-                    </a>
+                </Button>
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
@@ -110,9 +115,9 @@
                 >&copy; Bola De Oro 1910 -&nbsp;{new Date().getFullYear()}&nbsp;
             </span>
             <div class="mt-4 flex sm:mt-0 sm:justify-center">
-                <a
-                    href="https://github.com/Deredaya03/BDO"
-                    class="text-gray-700 hover:text-white ms-5 duration-300"
+                <Button
+                    url="https://github.com/Deredaya03/Bola-De-Oro"
+                    className="text-gray-700 hover:text-white ms-5 duration-300"
                 >
                     <svg
                         class="h-4 w-4"
@@ -127,7 +132,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
                     <span class="sr-only">GitHub account</span>
-                </a>
+                </Button>
             </div>
         </div>
     </div>

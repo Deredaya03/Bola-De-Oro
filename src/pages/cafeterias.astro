@@ -1,22 +1,5 @@
 ---
-import Layout from "@/layouts/Layout.astro"
-import Fondo from "@/components/Cafeterias/Fondo.astro";
-import Footer from "@/components/Footer.astro";
-import Intro from "@/components/Cafeterias/Intro.astro";
-import Bento from "@/components/Cafeterias/Bento.astro";
-
-import { getI18N } from "@/i18n/index"
-import { getLangFromUrl, useTranslations, useTranslatedPath, } from '@/i18n/utils';
-
-const { currentLocale } = Astro
-const i18n = getI18N({ currentLocale })
+import CafeteriaPage from '@/components/Page/Cafeterias.astro'
 ---
 
-<Layout title={i18n.SEO.CAFETERIAS_TITLE} description={i18n.SEO.CAFETERIAS_DESCRIPTION}>
-    <Fondo />
-    <main>
-        <Intro />
-        <Bento />
-    </main>
-    <Footer />
-</Layout>
+<CafeteriaPage />
